@@ -60,6 +60,7 @@ class UserEventsPage extends StatelessWidget with AutoRouteWrapper {
                     title: e.header,
                     role: e.role ?? '',
                     date: e.date,
+                    onTap: () {},
                   );
                 },
               );
