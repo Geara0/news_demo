@@ -85,6 +85,12 @@ class _NewsPageState extends State<_NewsPage> {
                 }
 
                 if (state is NewsReceiveState) {
+                  if (state.news.isEmpty) {
+                    return Center(
+                      child: const Text('newsPage.noNews').tr(),
+                    );
+                  }
+
                   return ListView.builder(
                     itemCount: state.news.length,
                     itemBuilder: (context, i) {

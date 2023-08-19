@@ -41,12 +41,13 @@ class NewsBloc extends Bloc<NewsEvent, NewsState> {
   }
 
   FutureOr<void> _initialEvent(NewsInitialEvent event, emit) async {
+    // Эмуляция сервера
     await Future.delayed(const Duration(seconds: 1));
-    emit(_requestEvent(NewsRequestEvent(NewsType.any), emit));
+    _requestEvent(NewsRequestEvent(NewsType.any), emit);
   }
 
   FutureOr<void> _requestEvent(NewsRequestEvent event, emit) {
-    var res = <NewsDto>[];
+    final res = <NewsDto>[];
 
     switch (event.type) {
       case NewsType.global:
