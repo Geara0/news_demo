@@ -16,6 +16,7 @@ dependencies:
   auto_route: ^7.8.0
   flutter_animate: ^4.2.0+1
   easy_localization: ^3.0.2
+  smooth_page_indicator: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -23,8 +24,36 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   build_runner: ^2.4.6
   flutter_gen: ^5.3.1
+  auto_route_generator: ^7.3.1
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
+  assets:
+    - assets/card/
+    - assets/icon/
+    - assets/news/
+    - assets/onboarding/
+    - assets/profile/
+    - assets/translations/
+    - assets/user_event/
   generate: true
   uses-material-design: true
+  fonts:
+    - family: icomoon
+      fonts:
+       - asset: assets/icomoon/icomoon.ttf
+    - family: Sansation
+      fonts:
+        - asset: fonts/Sansation/Sansation-Bold.ttf
+        - asset: fonts/Sansation/Sansation-BoldItalic.ttf
+        - asset: fonts/Sansation/Sansation-Italic.ttf
+        - asset: fonts/Sansation/Sansation-Light.ttf
+        - asset: fonts/Sansation/Sansation-LightItalic.ttf
+        - asset: fonts/Sansation/Sansation-Regular.ttf
 
+flutter_launcher_icons:
+  android: true
+  ios: true
+  adaptive_icon_foreground: 'assets/icon/icon.png'
+  adaptive_icon_background: '#FFFFFF'
+  image_path: 'assets/icon/icon.jpg'
