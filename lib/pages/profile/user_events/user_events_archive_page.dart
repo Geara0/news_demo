@@ -28,9 +28,9 @@ class UserEventsArchivePage extends StatelessWidget {
               const SizedBox(height: 24),
               UserEventCard(
                 image: const AssetImage('assets/user_event/img.png'),
-                title: '412412341234123412341234123412412423141234',
-                role: '523452345234524352345',
-                date: '23 23 23 234',
+                title: 'userEventsArchivePage.2.header'.tr(),
+                role: 'userEventsArchivePage.2.role'.tr(),
+                date: 'userEventsArchivePage.2.date'.tr(),
                 onTap: () {},
               ),
             ],

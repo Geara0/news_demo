@@ -43,7 +43,7 @@ class UserEventCard extends StatelessWidget {
                       role,
                       style: const TextStyle(
                         fontSize: 14,
-                        color: Color(0xFF333037),
+                        color: Color(0x7F333037),
                       ),
                     ),
                     const SizedBox(height: 9),
@@ -51,13 +51,12 @@ class UserEventCard extends StatelessWidget {
                       date,
                       style: const TextStyle(
                         fontSize: 12,
-                        color: Color(0xFF333037),
+                        color: Color(0x7F333037),
                       ),
                     ),
                   ],
                 ),
               ),
-              const SizedBox(width: 40),
               Container(
                 clipBehavior: Clip.antiAlias,
                 decoration: BoxDecoration(

@@ -64,12 +64,15 @@ class NewsCard extends StatelessWidget {
                         maxLines: 3,
                         overflow: TextOverflow.ellipsis,
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Text(
                         bottomText,
                         textAlign: TextAlign.left,
                         overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(color: Colors.grey),
+                        style: const TextStyle(
+                          fontSize: 10,
+                          color: Colors.grey,
+                        ),
                       ),
                     ],
                   ),
