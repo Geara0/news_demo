@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:news_demo/icomoon_icons.dart';
 import 'package:news_demo/router/router.dart';
 import 'package:news_demo/widgets/secondary_app_bar/secondary_app_bar.dart';
 import 'package:news_demo/widgets/user_event_card/user_event_card.dart';
@@ -19,7 +20,7 @@ class UserEventsPage extends StatelessWidget {
             onPressed: () {
               context.router.push(const UserEventsArchivePageRoute());
             },
-            icon: const Icon(Icons.watch_later_outlined),
+            icon: const Icon(Icomoon.clock),
           ),
         ],
       ),
