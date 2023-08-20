@@ -18,7 +18,7 @@ class _MainLayoutState extends State<MainLayout>
 
   @override
   Widget build(BuildContext context) {
-    return AutoTabsRouter.pageView(
+    return AutoTabsRouter.tabBar(
       physics: const NeverScrollableScrollPhysics(),
       builder: (context, child, _) {
         final tabsRouter = context.tabsRouter;
@@ -30,14 +30,14 @@ class _MainLayoutState extends State<MainLayout>
             child: SizedBox(
               height: 55,
               child: TabBar(
-                onTap: tabsRouter.setActiveIndex,
+                onTap: (i) {
+                  debugPrint(i.toString());
+                  tabsRouter.setActiveIndex(i, notify: true);
+                },
                 controller: _tabController,
                 tabs: [
                   Tab(
-                    icon: const Icon(
-                      Icomoon.home,
-                      color: Colors.black,
-                    ),
+                    icon: const Icon(Icomoon.home),
                     text: 'mainLayout.tabs.main'.tr(),
                     iconMargin: EdgeInsets.zero,
                   ),

@@ -76,7 +76,6 @@ class _MainPageState extends State<_MainPage> {
                           date: e.date,
                           title: e.header,
                           place: e.place,
-                          // background: const AssetImage('assets/card/background.png'),
                           background: e.image,
                         ),
                       );
