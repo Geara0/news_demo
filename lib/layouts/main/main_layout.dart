@@ -30,10 +30,7 @@ class _MainLayoutState extends State<MainLayout>
             child: SizedBox(
               height: 55,
               child: TabBar(
-                onTap: (i) {
-                  debugPrint(i.toString());
-                  tabsRouter.setActiveIndex(i, notify: true);
-                },
+                onTap: tabsRouter.setActiveIndex,
                 controller: _tabController,
                 tabs: [
                   Tab(
