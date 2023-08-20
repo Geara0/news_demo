@@ -28,8 +28,8 @@
   "mainLayout": {
     "tabs": {
       "main": "главная",
-      "events": "мероприятия",
-      "chat": "чат",
+      "canvas": "холст",
+      "notifications": "уведомления",
       "profile": "мой профиль"
     }
   },
@@ -82,5 +82,10 @@
     "header": "архив мероприятий",
     "clear": "очистить",
     "noEvents": "Ничего не произошло"
+  },
+  "notificationsPage": {
+    "title": "Уведомления",
+    "notificationTitle": "Тестовое уведомление",
+    "count": "Вы были уведомлены {} раз(а)"
   }
 }

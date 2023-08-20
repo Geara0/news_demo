@@ -17,6 +17,7 @@ dependencies:
   flutter_animate: ^4.2.0+1
   easy_localization: ^3.0.2
   smooth_page_indicator: ^1.1.0
+  flutter_local_notifications: ^15.1.0+1
 
 dev_dependencies:
   flutter_test:
@@ -54,6 +55,6 @@ flutter:
 flutter_launcher_icons:
   android: true
   ios: true
-  adaptive_icon_foreground: 'assets/icon/icon.png'
+  adaptive_icon_foreground: 'assets/icon/icon_android.png'
   adaptive_icon_background: '#FFFFFF'
   image_path: 'assets/icon/icon.jpg'

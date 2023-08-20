@@ -11,7 +11,8 @@ import 'package:news_demo/pages/news/news_modal.dart';
 import 'package:news_demo/pages/profile/profile_page.dart';
 import 'package:news_demo/pages/profile/user_events/user_events_page.dart';
 import 'package:news_demo/pages/profile/user_events/user_events_archive_page.dart';
-import 'package:news_demo/pages/placeholder/placeholder_page.dart';
+import 'package:news_demo/pages/notifications/notifications_page.dart';
+import 'package:news_demo/pages/canvas/canvas_page.dart';
 
 part 'router.gr.dart';
 
@@ -89,8 +90,12 @@ class AppRouter extends _$AppRouter {
               ],
             ),
             AutoRoute(
-              path: 'placeholder',
-              page: PlaceholderPageRoute.page,
+              path: 'canvas',
+              page: CanvasPageRoute.page,
+            ),
+            AutoRoute(
+              path: 'notifications',
+              page: NotificationsPageRoute.page,
             ),
           ],
         ),

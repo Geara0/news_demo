@@ -42,13 +42,13 @@ class _MainLayoutState extends State<MainLayout>
                       iconMargin: EdgeInsets.zero,
                     ),
                     Tab(
-                      icon: const Icon(Icomoon.calendar),
-                      text: 'mainLayout.tabs.events'.tr(),
+                      icon: const Icon(Icons.brush_outlined),
+                      text: 'mainLayout.tabs.canvas'.tr(),
                       iconMargin: EdgeInsets.zero,
                     ),
                     Tab(
-                      icon: const Icon(Icomoon.chat),
-                      text: 'mainLayout.tabs.chat'.tr(),
+                      icon: const Icon(Icomoon.bell),
+                      text: 'mainLayout.tabs.notifications'.tr(),
                       iconMargin: EdgeInsets.zero,
                     ),
                     Tab(
@@ -64,8 +64,8 @@ class _MainLayoutState extends State<MainLayout>
         },
         routes: const [
           MainPageRoute(),
-          PlaceholderPageRoute(),
-          PlaceholderPageRoute(),
+          CanvasPageRoute(),
+          NotificationsPageRoute(),
           ProfilePageRoute(),
         ],
       ),
